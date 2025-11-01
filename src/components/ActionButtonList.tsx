@@ -3,15 +3,15 @@ import { useDisconnect, useAppKit, useAppKitNetwork  } from '@reown/appkit/react
 import { networks } from '@/config'
 
 export const ActionButtonList = () => {
-    const { disconnect } = useDisconnect();
-    const { open } = useAppKit();
-    const { switchNetwork } = useAppKitNetwork();
+    const { disconnect } = useDisconnect()
+    const { open } = useAppKit()
+    const { switchNetwork } = useAppKitNetwork()
 
     const handleDisconnect = async () => {
       try {
-        await disconnect();
+        await disconnect()
       } catch (error) {
-        console.error("Failed to disconnect:", error);
+        console.error("Failed to disconnect:", error)
       }
     }
   return (

@@ -1,8 +1,8 @@
-// import { cookieStorage, createStorage, http } from '@wagmi/core'
-import { ConnectButton } from "@/components/ConnectButton";
-import { InfoList } from "@/components/InfoList";
-import { ActionButtonList } from "@/components/ActionButtonList";
-import Image from 'next/image';
+import { ConnectButton } from "@/components/ConnectButton"
+import { InfoList } from "@/components/InfoList"
+import { ActionButtonList } from "@/components/ActionButtonList"
+import { WaitlistButton } from "@/components/WaitlistButton"
+import Image from 'next/image'
 
 export default function Home() {
 
@@ -13,6 +13,7 @@ export default function Home() {
 
       <ConnectButton />
       <ActionButtonList />
+      <WaitlistButton />
       <div className="advice">
         <p>
           This projectId only works on localhost. <br/>Go to <a href="https://dashboard.reown.com" target="_blank" className="link-button" rel="Reown Dashboard">Reown Dashboard</a> to get your own.
@@ -20,5 +21,5 @@ export default function Home() {
       </div>
       <InfoList />
     </div>
-  );
+  )
 }
