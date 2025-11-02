@@ -7,7 +7,7 @@ export const baseSepolia = defineChain({
   rpc: 'https://sepolia.base.org'
 })
 
-export const USDC_ADDRESS = '0x26df8d79c4faca88d0212f0bd7c4a4d1e8955f0e'
+export const USDC_ADDRESS = '0x036CbD53842c5426634e7929541eC2318f3dCF7e'
 export const PAYMENT_AMOUNT = '100000'
 export const PAYMENT_PRICE = {
   amount: PAYMENT_AMOUNT,
